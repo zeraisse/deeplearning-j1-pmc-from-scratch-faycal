@@ -32,5 +32,14 @@ b = 0.1
 # TODO : appeler forward, puis compute_loss, puis afficher y_pred.round(3) et loss
 y_pred = forward(X,w,b)
 loss = compute_loss(y, y_pred)
+# print(y_pred.round(3))
+# print(loss)
+
+X = np.zeros((4, 2))
+w = np.zeros(2)
+b = 0
+
+y_pred = forward(X,w,b)
+loss = compute_loss(y, y_pred)
 print(y_pred.round(3))
 print(loss)
